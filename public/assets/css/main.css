@@ -298,6 +298,8 @@ body {
 .header__background--title {
   font-size: 42px;
   font-weight: 700;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .span {
@@ -322,29 +324,34 @@ body {
 }
 
 .tips {
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding: 30px 15px 45px 15px;
 }
 
 .section__tips {
   color: #8ccbea;
+  font-size: 14px;
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .section__paragraph {
   color: #4a4a4a;
+  font-size: 18px;
 }
 
 .go {
   color: #f26002;
   width: 76px;
   height: 45px;
-  border-radius: 40%;
+  border-radius: 22.5px;
   border: 2px solid #f26002;
   background-color: #ffffff;
 }
 
 .reasons-container {
-  width: 184px;
   text-align: center;
 }
 
@@ -358,23 +365,61 @@ body {
 .more-reasons {
   color: #ffffff;
   background-color: #f26002;
-  border-radius: 30%;
+  border-radius: 22.5px;
   border: 2px solid #f26002;
   width: 184px;
   height: 45px;
-  padding: 10px 10px;
+  padding: 0px 30px;
 }
 
 .footer {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #304268;
   color: #ffffff;
   padding-top: 60px;
   padding-bottom: 45px;
+  position: relative;
+}
+
+.list-item {
+  text-align: center;
+  padding: 5px;
+}
+
+.arrow2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: -5%;
 }
 
 .copy {
   display: block;
+  text-align: center;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
