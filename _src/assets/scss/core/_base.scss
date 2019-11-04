@@ -135,5 +135,38 @@ body {
     padding: 5px
 }
 
+@media all and (min-width: 768px) {
+    .footer {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .lists-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        flex-basis: 50%;
+    }
+    .arrow2 {
+        top: -7%;
+    }
+    .list-item {
+        text-align: left;
+    }
+    .copy {
+        text-align: left;
+        padding-top: 16px;
+       
+    }
 
-
+}
+@media all and (min-width: 1280px) {
+.tips {
+    max-width: 730px;
+    margin: auto;
+}
+.footer {
+    justify-content: center;
+}
+}
