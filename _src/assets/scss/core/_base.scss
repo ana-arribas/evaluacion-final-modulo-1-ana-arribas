@@ -40,7 +40,9 @@ body {
 }
 .header__background--title {
     font-size: 42px;   
-    font-weight: bold;
+    font-weight: 700;
+    
+
 }
 
 .span {
@@ -56,7 +58,10 @@ body {
     align-items: center;
     margin-top: 45px;
 }
-
+.tips {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
 .section__tips {
     color: #8ccbea;
 }
@@ -70,6 +75,35 @@ body {
     border-radius: 40%;
     border: 2px solid #f26002;
     background-color: #ffffff;
+}
+.reasons-container {
+    width: 184px;
+    text-align: center;
+}
+.reasons {
+    text-align: center;
+    background-color: #eff9ff;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.more-reasons {
+    color: #ffffff;
+    background-color: #f26002;
+    border-radius: 30%;
+    border: 2px solid #f26002;
+    width: 184px;
+    height: 45px;
+    padding:10px 10px;
+}
+.footer {
+    text-align: center;
+    background-color: #304268;
+    color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 45px;
+}
+.copy {
+    display: block;
 }
 
 
