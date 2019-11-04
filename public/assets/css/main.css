@@ -272,7 +272,7 @@ body {
   padding-bottom: 53px;
 }
 
-.wrap-hamburguer {
+.header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,23 +290,24 @@ body {
   background-color: #0271bc;
 }
 
-.hamburguer {
+.header__menu--hamburguer {
   width: 16px;
   height: 14px;
 }
 
-.header__background--title {
+.header__title {
+  font-family: 'Roboto Slab', serif;
   font-size: 42px;
   font-weight: 700;
   margin: 0px;
   margin-bottom: 10px;
 }
 
-.span {
+.header__subtitle {
   font-size: 16px;
 }
 
-.arrow1 {
+.header__arrow {
   border-radius: 50%;
   width: 45px;
   height: 45px;
@@ -323,7 +324,7 @@ body {
   margin-top: 45px;
 }
 
-.tips {
+.section {
   padding: 30px 15px 45px 15px;
 }
 
@@ -333,6 +334,7 @@ body {
 }
 
 .section__title {
+  font-family: 'Roboto Slab', serif;
   font-weight: bold;
   font-size: 24px;
 }
@@ -342,7 +344,7 @@ body {
   font-size: 18px;
 }
 
-.go {
+.section__button {
   color: #f26002;
   width: 76px;
   height: 45px;
@@ -351,18 +353,18 @@ body {
   background-color: #ffffff;
 }
 
-.reasons-container {
-  text-align: center;
-}
-
-.reasons {
+.article {
   text-align: center;
   background-color: #eff9ff;
   padding-top: 30px;
   padding-bottom: 60px;
 }
 
-.more-reasons {
+.article__container {
+  text-align: center;
+}
+
+.article__button {
   color: #ffffff;
   background-color: #f26002;
   border-radius: 22.5px;
@@ -393,12 +395,7 @@ body {
   position: relative;
 }
 
-.list-item {
-  text-align: center;
-  padding: 5px;
-}
-
-.arrow2 {
+.footer__arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,7 +413,12 @@ body {
   top: -5%;
 }
 
-.copy {
+.list-item {
+  text-align: center;
+  padding: 5px;
+}
+
+.footer__copy--item {
   display: block;
   text-align: center;
   padding: 5px;
@@ -435,7 +437,7 @@ body {
     align-items: flex-start;
   }
 
-  .lists-wrapper {
+  .footer__lists--wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -450,22 +452,22 @@ body {
     flex-basis: 50%;
   }
 
-  .arrow2 {
+  .footer__arrow {
     top: -7%;
   }
 
-  .list-item {
+  .footer__list--item {
     text-align: left;
   }
 
-  .copy {
+  .footer__copy--item {
     text-align: left;
     padding-top: 16px;
   }
 }
 
 @media all and (min-width: 1280px) {
-  .tips {
+  .section {
     max-width: 730px;
     margin: auto;
   }

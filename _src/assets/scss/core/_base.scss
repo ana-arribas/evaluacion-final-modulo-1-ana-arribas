@@ -20,10 +20,10 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding-bottom: 53px;
+}  
 }
-    
-}
-.wrap-hamburguer {
+
+.header__menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,23 +34,25 @@ body {
     height: 44px;
     background-color:#0271bc;
 }
-.hamburguer {
+
+.header__menu--hamburguer {
     width: 16px;
     height: 14px;
 }
-.header__background--title {
+
+.header__title {
+    font-family: 'Roboto Slab', serif;
     font-size: 42px;   
     font-weight: 700;
     margin: 0px;
     margin-bottom: 10px;
-    
-
 }
 
-.span {
+.header__subtitle {
     font-size: 16px;
 }
-.arrow1 {
+
+.header__arrow {
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -60,7 +62,7 @@ body {
     align-items: center;
     margin-top: 45px;
 }
-.tips {
+.section {
     padding: 30px 15px 45px 15px;
    
 }
@@ -69,6 +71,7 @@ body {
     font-size: 14px;
 }
 .section__title {
+    font-family: 'Roboto Slab', serif;
     font-weight: bold;
     font-size: 24px;
 }
@@ -76,7 +79,7 @@ body {
     color: #4a4a4a;
     font-size: 18px;
 }
-.go {
+.section__button {
     color: #f26002;
     width: 76px;
     height: 45px;
@@ -84,16 +87,16 @@ body {
     border: 2px solid #f26002;
     background-color: #ffffff;
 }
-.reasons-container {
-    text-align: center;
-}
-.reasons {
+.article {
     text-align: center;
     background-color: #eff9ff;
     padding-top: 30px;
     padding-bottom: 60px;
 }
-.more-reasons {
+.article__container {
+    text-align: center;
+}
+.article__button {
     color: #ffffff;
     background-color: #f26002;
     border-radius: 22.5px;
@@ -113,11 +116,7 @@ body {
     padding-bottom: 45px;
     position: relative;
 }
-.list-item {
-    text-align: center;
-    padding: 5px;
-}
-.arrow2 {
+.footer__arrow {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,9 +126,12 @@ body {
     border-radius: 50%;
     position: absolute;
     top: -5%;
-   
 }
-.copy {
+.list-item {
+    text-align: center;
+    padding: 5px;
+}
+.footer__copy--item {
     display: block;
     text-align: center;
     padding: 5px
@@ -141,20 +143,19 @@ body {
         justify-content: space-around;
         align-items: flex-start;
     }
-    .lists-wrapper {
+    .footer__lists--wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
         flex-basis: 50%;
     }
-    .arrow2 {
+    .footer__arrow {
         top: -7%;
     }
-    .list-item {
+    .footer__list--item {
         text-align: left;
     }
-    .copy {
+    .footer__copy--item {
         text-align: left;
         padding-top: 16px;
        
@@ -162,7 +163,7 @@ body {
 
 }
 @media all and (min-width: 1280px) {
-.tips {
+.section {
     max-width: 730px;
     margin: auto;
 }
