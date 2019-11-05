@@ -50,13 +50,7 @@ a {
     font-size: 1rem;
 }
 &__arrow {
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    background-color: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include arrowstyle;
     margin-top: 45px;
     &:hover {
         background-color: $arrow-hover;
@@ -155,17 +149,10 @@ a {
         align-items: center;
     }
     &__arrow {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 45px;
-        height: 45px;
-        padding: 15px;
+        @include arrowstyle;
         margin: auto;
         left: 0px;
         right: 0px;
-        background-color: $white;
-        border-radius: 50%;
         position: absolute;
         top: -5%;
         &:hover {
@@ -198,10 +185,6 @@ a {
         }
         &__subtitle {
             font-size: 1.5rem;
-        }
-        &__title {
-            font-size: 1.625rem;
-            line-height: 45px;
         }
     }
     .section {
