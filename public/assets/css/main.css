@@ -346,12 +346,14 @@ a {
 .section__title {
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+  line-height: 30px;
   margin-top: 5px;
 }
 
 .section__paragraph {
   color: #4a4a4a;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .section__button {
@@ -476,6 +478,10 @@ a {
   text-align: center;
 }
 
+.footer__list--item a {
+  font-size: 16px;
+}
+
 .footer__copy--item {
   display: block;
   text-align: center;
@@ -483,6 +489,28 @@ a {
 }
 
 @media all and (min-width: 768px) {
+  .header__title {
+    font-size: 80px;
+    line-height: 106px;
+  }
+
+  .header__subtitle {
+    font-size: 24px;
+  }
+
+  .section__title {
+    font-size: 26px;
+    line-height: 45px;
+  }
+
+  .section__paragraph {
+    font-size: 20px;
+  }
+
+  .section__button {
+    width: 91px;
+  }
+
   .aside__title {
     font-size: 26px;
   }
@@ -503,6 +531,10 @@ a {
 
   .aside__grid--paragraph {
     font-size: 20px;
+  }
+
+  .aside__button {
+    width: 210px;
   }
 
   .footer__container {
@@ -547,13 +579,30 @@ a {
 }
 
 @media all and (min-width: 1280px) {
+  .header__title {
+    font-size: 100px;
+    line-height: 132px;
+  }
+
   .section {
     max-width: 730px;
     margin: auto;
   }
 
+  .section__tips {
+    font-size: 16px;
+  }
+
+  .section__button {
+    width: 160px;
+  }
+
   .aside__title {
     font-size: 32px;
+  }
+
+  .aside__button {
+    width: 255px;
   }
 
   .footer__container {
