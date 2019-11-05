@@ -644,18 +644,18 @@ a {
   }
 
   25% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
 
   50% {
-    -webkit-transform: translateY(60px);
-    transform: translateY(60px);
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
   }
 
   75% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
 
   100% {
@@ -671,18 +671,18 @@ a {
   }
 
   25% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
 
   50% {
-    -webkit-transform: translateY(60px);
-    transform: translateY(60px);
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
   }
 
   75% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
 
   100% {
