@@ -1,6 +1,10 @@
-@import 'core/settings';
-@import 'core/links';
+// core
+@import 'core/variables';
+
+// vendor
 @import 'vendors/normalize.scss';
-@import 'core/base';
+
+// layout
+@import 'layout/base';
 
 
