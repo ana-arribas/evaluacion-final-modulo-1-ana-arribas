@@ -302,6 +302,7 @@ a {
 
 .header__title {
   font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
   font-size: 42px;
   font-weight: 700;
   margin: 0px;
@@ -345,6 +346,7 @@ a {
 
 .section__title {
   font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
   font-size: 24px;
   line-height: 30px;
   margin-top: 5px;
@@ -381,6 +383,7 @@ a {
 
 .aside__title {
   font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
   font-size: 24px;
   margin: 0px;
 }
@@ -476,6 +479,7 @@ a {
 
 .footer__list--item {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .footer__list--item a {
@@ -498,7 +502,7 @@ a {
     font-size: 24px;
   }
 
-  .section__title {
+  .header__title {
     font-size: 26px;
     line-height: 45px;
   }
@@ -511,7 +515,7 @@ a {
     width: 91px;
   }
 
-  .aside__title {
+  .section__title {
     font-size: 26px;
   }
 
