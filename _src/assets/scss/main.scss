@@ -3,10 +3,15 @@
 @import 'core/mixins';
 
 // vendor
-@import 'vendors/normalize.scss';
+@import 'vendors/normalize';
 
 // layout
 @import 'layout/base';
+@import 'layout/header';
+@import 'layout/section';
+@import 'layout/aside';
+@import 'layout/footer';
+@import 'layout/mediaqueries';
 
 
 

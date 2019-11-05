@@ -1,0 +1,116 @@
+@media all and (min-width: 768px) {
+    .header {
+        &__title {
+            font-size: 5rem;
+            line-height: 106px;
+        }
+        &__subtitle {
+            font-size: 1.5rem;
+        }
+    }
+    .section {
+        &__paragraph {
+            font-size: 1.25rem;
+        }
+        &__button {
+            width: 91px;
+        }
+        &__title {
+            font-size:  1.625rem;
+        }
+    }
+    .aside {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 28px;
+        }
+        &__grid {
+            &--container {
+                grid-column: span 1;
+            }
+            &--title {
+                margin-top: 45px;
+                font-size: 1.5rem;
+            }
+            &--paragraph {
+                font-size: 1.25rem;
+            }
+        }
+        &__button {
+            width: 210px;
+        }
+    }
+    .footer {
+        &__container {
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        &__lists {
+            &--wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-basis: 50%;
+            }
+        }
+        &__arrow {
+            top: -7%;
+        }
+        &__list {
+            &--item {
+                text-align: left;
+            }
+        }       
+        &__copy {
+            &--item {
+                text-align: left;
+                padding-top: 16px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .header {
+        &__title {
+            font-size: 6.25rem;
+            line-height: 132px;
+        }
+    }
+    .section {
+        max-width: 730px;
+        margin: auto;
+        &__tips {
+            font-size: 1rem;
+        }
+        &__button {
+            width: 160px;
+        }
+    }
+    .aside {
+        &__title {
+            font-size: 2rem;
+        }
+        &__wrapper {
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        &__button {
+            width: 255px;
+        }
+    }
+    .footer {
+        &__container {
+            justify-content: center;
+        }
+        &__lists {
+            &--wrapper {
+                justify-content: space-evenly;
+                align-items: flex-start;
+                flex-basis: 30%;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.section {
+    padding: 30px 15px 45px 15px; 
+    line-height: 30px;
+    &__tips {
+        color: $insomnia-tips;
+        font-size: 0.875rem;
+    }
+    &__title {
+        font-family: $slab;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        line-height: 30px;
+        margin-top: 5px;
+    }
+    &__paragraph {
+        color: $font-paragraph;
+        font-size: 1.125rem;
+        line-height: 30px;
+    }
+    &__button {
+        color: $button;
+        width: 76px;
+        height: 45px;
+        border-radius: 22.5px;
+        border: 2px solid $button;
+        background-color: $white;
+        transition: ease-out 0.3s;
+        &:hover {
+            font-size: 130%;
+        }
+    }
+}

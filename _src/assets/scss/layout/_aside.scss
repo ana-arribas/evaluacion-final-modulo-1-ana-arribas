@@ -1,0 +1,46 @@
+.aside {
+    text-align: center;
+    background-color: $aside-back;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    line-height: 30px;
+    &__title {
+        font-family: $slab;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &__grid {
+        &--container {
+            grid-column: 2/4;
+            font-size: 1.125rem;
+            margin: 0px;
+        }
+        &--title {
+            margin-top: 45px;
+            margin-bottom: 0px;
+            font-size: 1.125rem;
+        }
+        &--paragraph {
+            font-size: 1.125rem;
+        }
+    }
+    &__button {
+        color: $white;
+        background-color: $button;
+        border-radius: 22.5px;
+        border: 2px solid $button;
+        width: 184px;
+        height: 45px;
+        margin-top: 45px;
+        padding: 0px 30px;
+        transition: ease-out 0.3s;
+        &:hover {
+            width: 200px;;
+        }
+    }
+}

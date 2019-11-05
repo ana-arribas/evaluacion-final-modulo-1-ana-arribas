@@ -1,0 +1,42 @@
+.footer {
+    background-color: $footer-back;
+    color: $white;
+    padding-top: 60px;
+    padding-bottom: 45px;
+    line-height: 30px;
+    position: relative;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__arrow {
+        @include arrowstyle;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        top: -5%;
+        &:hover {
+            background-color: $arrow-hover;
+        }
+    }
+    &__list {
+        &--item {
+            text-align: center;
+            text-transform: uppercase;
+                a {              
+                font-size: 1rem;
+                }
+        }
+    }
+    &__copy {
+        &--item {
+            display: block;
+            text-align: center;
+            font-size: 0.875rem;
+        }
+    }
+}
+            
