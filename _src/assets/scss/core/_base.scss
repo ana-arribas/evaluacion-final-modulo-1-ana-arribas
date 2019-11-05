@@ -4,6 +4,7 @@ html {
 
 a {
     color: inherit;
+    padding: 10px 10px;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -21,9 +22,7 @@ body {
     align-items: center;
     padding-bottom: 53px;
 }  
-}
-
-.header__menu {
+&__menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,26 +32,25 @@ body {
     width: 44px;
     height: 44px;
     background-color:#0271bc;
-}
-
-.header__menu--hamburguer {
+    &:hover {
+        background-color: darkblue;
+    }
+    &--hamburguer {
     width: 16px;
     height: 14px;
 }
-
-.header__title {
+}
+&__title {
     font-family: 'Roboto Slab', serif;
     font-size: 42px;   
     font-weight: 700;
     margin: 0px;
     margin-bottom: 10px;
 }
-
-.header__subtitle {
+&__subtitle {
     font-size: 16px;
 }
-
-.header__arrow {
+&__arrow {
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -61,10 +59,14 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 45px;
+    &:hover {
+        background-color: rgb(209, 202, 202);
+    }
+}
 }
 .section {
-    padding: 30px 15px 45px 15px;
-   
+    padding: 30px 15px 45px 15px; 
+    line-height: 30px;
 }
 .section__tips {
     color: #8ccbea;
@@ -72,8 +74,8 @@ body {
 }
 .section__title {
     font-family: 'Roboto Slab', serif;
-    font-weight: bold;
     font-size: 24px;
+    margin-top: 5px;
 }
 .section__paragraph {
     color: #4a4a4a;
@@ -86,24 +88,53 @@ body {
     border-radius: 22.5px;
     border: 2px solid #f26002;
     background-color: #ffffff;
+    transition: ease-out 0.3s;
+    &:hover {
+        font-size: 130%;
+        }
 }
-.article {
+.aside {
     text-align: center;
     background-color: #eff9ff;
     padding-top: 30px;
     padding-bottom: 60px;
+    line-height: 30px;
 }
-.article__container {
-    text-align: center;
+.aside__title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    margin: 0px;
 }
-.article__button {
+.aside__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.aside__grid--container {
+    grid-column: 2/4;
+    font-size: 18px;
+    margin: 0px;
+}
+.aside__grid--title {
+    margin-top: 45px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.aside__grid--paragraph {
+    font-size: 18px;
+}
+.aside__button {
     color: #ffffff;
     background-color: #f26002;
     border-radius: 22.5px;
     border: 2px solid #f26002;
     width: 184px;
     height: 45px;
-    padding:0px 30px;
+    margin-top: 45px;
+    padding: 0px 30px;
+    transition: ease-out 0.3s;
+    &:hover {
+        width: 200px;;
+        }
 }
 .footer {
     display: flex;
@@ -114,6 +145,7 @@ body {
     color: #ffffff;
     padding-top: 60px;
     padding-bottom: 45px;
+    line-height: 30px;
     position: relative;
 }
 .footer__arrow {
@@ -122,14 +154,17 @@ body {
     justify-content: center;
     width: 45px;
     height: 45px;
+    padding: 15px;
     background-color: #ffffff;
     border-radius: 50%;
     position: absolute;
     top: -5%;
+    &:hover {
+        background-color: rgb(209, 202, 202);
+    }
 }
-.list-item {
+.footer__list--item {
     text-align: center;
-    padding: 5px;
 }
 .footer__copy--item {
     display: block;
@@ -138,6 +173,23 @@ body {
 }
 
 @media all and (min-width: 768px) {
+    .aside__title {
+        font-size: 26px;
+    }
+    .aside__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .aside__grid--container {
+        grid-column: span 1;
+    }
+    .aside__grid--title {
+        margin-top: 45px;
+        font-size: 24px;
+    }
+    .aside__grid--paragraph {
+        font-size: 20px;
+    }
     .footer {
         flex-direction: row-reverse;
         justify-content: space-around;
@@ -167,7 +219,11 @@ body {
     max-width: 730px;
     margin: auto;
 }
+.aside__title {
+    font-size: 32px;
+}
 .footer {
     justify-content: center;
 }
+
 }
