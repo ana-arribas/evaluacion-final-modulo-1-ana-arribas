@@ -1,4 +1,6 @@
 .section {
+    display:flex;
+    flex-direction:column;
     padding: 30px 15px 45px 15px; 
     line-height: 30px;
     &__tips {
@@ -16,14 +18,15 @@
         color: $font-paragraph;
         font-size: 1.125rem;
         line-height: 30px;
+        margin-bottom: 20px;
     }
     &__button {
-        color: $button;
-        width: 76px;
+        color: $white;
+        width: $button-width;
         height: 45px;
         border-radius: 22.5px;
         border: 2px solid $button;
-        background-color: $white;
+        background-color: $button;
         transition: ease-out 0.3s;
         &:hover {
             font-size: 130%;

@@ -9,11 +9,15 @@
         }
     }
     .section {
+        &__wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+        }
         &__paragraph {
             font-size: 1.25rem;
         }
         &__button {
-            width: 91px;
+            width: 210px;
         }
         &__title {
             font-size:  1.625rem;
@@ -86,7 +90,7 @@
             font-size: 1rem;
         }
         &__button {
-            width: 160px;
+            width: $button-width-tablet;
         }
     }
     .aside {
