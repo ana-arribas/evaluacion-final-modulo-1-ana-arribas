@@ -13,6 +13,7 @@
     }
     &__arrow {
         @include arrowstyle;
+        align-items: flex-end;
         margin: auto;
         left: 0px;
         right: 0px;

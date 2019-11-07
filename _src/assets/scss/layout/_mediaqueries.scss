@@ -9,20 +9,21 @@
         }
     }
     .section {
+        &__title {
+            font-size: 1.625rem;
+            width: 690px
+        }
         &__paragraph {
             font-size: 1.25rem;
+            width: 690px;
         }
         &__button {
             width: 91px;
         }
-        &__title {
-            font-size:  1.625rem;
-        }
     }
     .aside {
         &__wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 212px 212px 212px;
             column-gap: 28px;
         }
         &__grid {
@@ -85,6 +86,9 @@
         &__tips {
             font-size: 1rem;
         }
+        &__paragraph {
+            width: 730px;
+        }
         &__button {
             width: 160px;
         }
@@ -94,8 +98,7 @@
             font-size: 2rem;
         }
         &__wrapper {
-            margin-left: 80px;
-            margin-right: 80px;
+            grid-template-columns: 353px 353px 353px;
         }
         &__button {
             width: 255px;

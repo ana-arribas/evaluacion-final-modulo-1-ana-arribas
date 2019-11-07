@@ -14,41 +14,42 @@
         padding-bottom: 53px;
     }  
     &__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 44px;
-    height: 44px;
-    background-color:$hamburguer-back;
-    &:hover {
-        background-color:$hamburguer-hover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 44px;
+        height: 44px;
+        background-color:$hamburguer-back;
+        &:hover {
+            background-color:$hamburguer-hover;
+        }
+        &--hamburguer {
+            width: 16px;
+            height: 14px;
+        }
     }
-    &--hamburguer {
-        width: 16px;
-        height: 14px;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: $slab;
+        text-transform: uppercase;
+        font-size: 2.625rem;   
+        margin: 0px;
+        margin-bottom: 10px;
     }
-}
-&__title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: $slab;
-    text-transform: uppercase;
-    font-size: 2.625rem;   
-    margin: 0px;
-    margin-bottom: 10px;
-}
-&__subtitle {
-    font-size: 1rem;
-}
-&__arrow {
-    @include arrowstyle;
-    margin-top: 45px;
-    &:hover {
-        background-color: $arrow-hover;
+    &__subtitle {
+        font-size: 1rem;
     }
-}
+    &__arrow {
+        @include arrowstyle;
+        align-items: center;
+        margin-top: 45px;
+        &:hover {
+            background-color: $arrow-hover;
+        }
+    }
 }
